@@ -1,0 +1,83 @@
+body {
+  background-color: #CBD1CF;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 5px #050505;
+}
+
+.topic {
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 0px 0px 4px #050505;
+  max-width: 100%;
+}
+
+.info {
+  margin-left: 30px;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  font-size: 17px;
+  font-weight: normal;
+  text-shadow: 1px 1px 4px #050505;
+  max-width: 100%;
+}
+
+.lesson {
+  text-align: left;
+  color: white;
+  background-color: #35B890;
+  width: 300px;
+  padding: 50px;
+  border: 5px solid #FAFAF5;
+  border-radius: 25px 100px 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width: 50%;
+  height: 50%;
+  box-shadow: 4px 4px 6px 9px gray;
+}
+
+a {
+  color: #9AFCF8;
+}
+.more{
+  margin-left: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 17px;
+  font-weight: normal;
+  text-shadow: 1px 1px 4px #050505;
+  max-width: 100%;
+}
+.indent1{
+  margin-left: 35px;
+  word-wrap: break-word;
+
+}
+.indent2{
+  margin-left: 65px; 
+}
+.img{
+  max-width: 100%;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 6px #050505;
+  border-radius: 5px;
+}
+span{
+  color: #7BE6ED;
+}
+a{
+  word-wrap: break-word;
+}

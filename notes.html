@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+    <link rel="stylesheet" href="project1style.css">
+    <meta charset="UTF-8">
+      <title>
+        Intro to Programming Notes
+      </title>
+</head>
+<body>
+  <div>
+    <div class="lesson">
+      <h1>Lesson 1</h1>
+      <div class="topic">
+        What is HTML?
+        <div class="info">
+          <p>
+            HTML stands for HyperText Markup Language,
+            <br> It is made up of:
+          </p> 
+          <div class="more">
+            <p>
+              <b>1. Text Content</b>, what you see <br>
+              <b>2. Markup</b>, what it looks like <br>
+              <b>3. Reference to</b>, e.g. images and windows <br>
+              <b>4. Other Documents</b>, links to other pages
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="topic">
+        Tags, Elements, Attributes
+        <div class="info">
+          Here are some terms to keep in mind
+          <div class="more">
+            <b>1. Tag:</b> An HTML tag contains content with angled
+            <br> brackets with close tags or void tags that don't
+            <br> require a close tag.
+            <br>
+            <b>2. Element:</b> An HTML element refers to everything
+            <br> within a set of opening and closing tags
+            <br>
+            <b>3. Attributes:</b> This is a property of an HTML element.
+            <br> for example, to set the <u>href</u> attribute of an anchor tag
+            <br> to the udacity URL, you would write
+            &lt;a href=&quot;www.udacity.com&quot;&gt;
+          </div>
+        </div>
+      </div>
+      <div class="topic">
+        Inline vs Block
+        <div class="info">
+          -&lt;b&gt; = inline
+          <div class="more">
+            - Ex: text
+            &lt;br&gt; text
+            <br> - More inline:
+            &lt;b&gt;,
+            &lt;em&gt;,
+            &lt;img&gt;
+          </div>
+              -&lt;p&gt; = block
+          <div class="more">
+              - Ex:
+              &lt;p&gt; text
+              &lt;/p&gt;
+              <br> - Text can also be contained in a box with dimension and width
+          </div>
+            <p>
+              &lt;span&gt; text
+              &lt;/span&gt; is also an inline tag, which can be assigned
+              attributes such as "I have
+              &lt;span style:=&quot;color:blue;&quot;&gt;<span style:="color:blue"> blue </span> &lt;/span&gt; eyes.<br>
+              &lt;div&gt; text &lt;/div&gt; is a block tag, which can also be assined
+              attributes using CSS, like
+              &lt;div class="bar"&gt;
+            </p>
+        </div>
+      </div>
+      <div class="topic">
+        HTML Docs
+        <div class="info">
+          <p>
+            an example of the formatt of an HTML document:
+          </p>
+          <div class="more">
+            &lt;! DOCTYPE HTML&gt; - doc type, The reason is using CodePen's zip file exporter which takes care of inserting the header tags along with the opening and closing body tags​<br>&lt;HTML&gt; - open
+            <div class="indent1">
+              &lt;head&gt; - provides general information (metadata) about the document, including its title and links to or definitions of scripts and style sheets. You should not include any other tags inside head section.
+            </div> 
+              <div class="indent2">
+                &lt;title&gt; &lt;u&gt;Title!&lt;/u&gt;
+                &lt;/title&gt; - no markup, title only!
+              </div>
+            <div class="indent1">
+              &lt;/head&gt;
+            </div>
+            <div class="indent1">
+              &lt;body&gt; - this includes actual content
+            </div>
+              <div class="indent2">
+                &lt;b&gt; contents
+                &lt;b/&gt;
+              </div>  
+            <div class="indent1">
+              &lt;/body&gt;
+            </div>
+              &lt;/HTML&gt; - close
+          </div>
+            <p> 
+            This Udacity course covers the basics of making and HTML document like this ^
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="lesson">
+      <h1>Lesson 2</h1>
+      <div class="topic">
+        How a Webpage is Created
+        <div class="info">
+          <p>
+            HTML & CSS are both "languages"
+          </p>
+          <div class="more">
+            <p>
+              * Each have a syntax & a set of rules
+              <br> -HTML = Structure and Content
+              <br> -CSS = Style
+              <br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="topic">
+        Tree-like Structure
+        <div class="info">
+          <p>
+            The Tree-like structure or the DOM (Document Object Model) of a webpage is what organizes the code into branches. You can use the DOM to navigate and access any HTML element. Here, you can see the DOM in action using developer tools on an existing webpage, like this one from the Apple home page:
+          </p>
+            <img src="domcode.png" alt="this is a screenshot" class="img">
+          <p>
+            Here is a picture to visualize how the DOM works from <a href="http://nasdag.github.io/nasdag/metis/mcnulty/w6d1-d3-day-one.html">github</a>:
+          </p>
+          <img src="domtree.png" alt="this is a screenshot" class="img">
+        </div>
+      </div>
+        <div class="topic">
+          Boxes
+          <div class="info">
+            <p>
+              Start organizes your webpages by "boxifying" a PDF:<br>
+                Divide each element into it's own box, then code the structure using div tags
+            </p>
+              <p>
+                <br> -Draw it out
+                <br> -cut it out
+                <br> -don't forget: circles are boxes too
+                <br>
+              </p>
+            <div class="more">
+              Ex:
+              <br>
+              <br> &lt;div class=&quot;title&quot;&gt; My App &lt;/div&gt;
+              <br> &lt;div class=&quot;app&quot;&gt;
+              <div class="indent1">
+                &lt;div class=&quot;screenshot&quot;&gt;img&lt;/div&gt;
+                <br> &lt;div class=&quot;description&quot;&gt;text&lt;/div&gt;
+              </div>
+              &lt;/div&gt;
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lesson">
+      <h1>Lesson 3</h1>
+      <div class="topic">
+        CSS Stands for "Cascading Style Sheet"
+        <div class="info">
+          <p>
+            -Ex: type this into <a href="http://scratchpad.io/abject-babies-3935">scratchpad</a> after you erase the existing code:
+          </p>
+          <div class="more">
+            &lt;style&gt;
+            <div class="indent1">
+             h1 {
+            </div>
+              <div class="indent2">
+                color: pink;
+              </div>
+            <div class="indent1">
+              }
+            </div>
+            &lt;/style&gt;
+            <br> &lt;h1&gt;
+            <div class="indent1">
+              this is &lt;em&gt; pretty &lt;em&gt; weird
+            </div>
+            &lt;/h1&gt;
+          </div>
+          Why is <em>pretty</em> in pink? We will get into this in a minute.
+          <br> For now, lets talk about why CSS is "Cascading."
+          <br>
+          <p>
+            -Think about it like U.S. laws:
+          </p>
+            <div class="more">
+              National law
+              &lt; State law &lt; Municipality law &lt; House rules
+              in CSS it is opposite, "House rules" apply to "National law" in the way that the most specific rule applies,
+              meaning the rule that best fits the element applies
+         </div>
+          CSS provides a way to avoid repetition when coding by using selectors. By avoiding repetition you save time, your code and style is more consistant, there is less code to write, and you are less likely to make errors.
+        </div>
+      </div>
+      <div class="topic">
+        Selectors
+        <div class="info">
+          <p>
+            As we get into selectors here are some terms to help you understand:
+          </p>
+          <p>
+            <b>1. <u>Inheritance</u> :</b> properties are applied not only to the specific element, but also to its descendants. Box-related properties are not inherited, inherited properties include color, font, letter spacing, line height, list-style,
+            text-align, text indent, text transform, visibility, etc.
+            <br>
+            <b>2. <u>Selector</u> :</b> defines which elements of the page that the styling will apply to.
+            <br>
+            <b>3. <u>Style</u> :</b> can refer to a few things such as the HTML element, HTML attribute, the general look of the webpage, or as a verb (I need to style my webpage).
+            <br>
+            <b>4. <u>Rule</u> :</b> line of CSS code describing a value that a certain attribute should take on.
+            <br>
+            <b>5. <u>Property</u> :</b> the property you want to change.
+            <br>
+            <b>5. <u>Value</u> :</b> the value you want to assign to another attribute.
+            <br>
+            <b>6. <u>Selctor(2)</u> :</b> the name you sue to target elements assigned to a class or i.d. attribute in HTML.
+            <br>
+            <b>7. <u>Class</u> :</b> a group of elements styled together.
+            <br>
+            <b>8. <u>I.D.</u> :</b> a unique type of selector.
+          </p>
+          <p>
+            A "Class" selector will style all the content with a div matching the class name.
+          </p>
+          <p>
+            Example:
+          </p>
+          <p>
+            .dessert {
+            <br> font-size: 50px;
+            <br> }
+            <br>
+            <br> &lt;div class=&quot;dessert&quot;&gt;
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;froyo is hella good
+            <br> &lt;/div&gt;
+            <br>
+          </p>
+        </div>
+      </div>
+      <div class="topic">
+        How Do I Include CSS Style?
+        <div class="info">
+          <p>
+            The best method to include your CSS style is to attach a separate CSS file to your HTML doc in the head of your HTML file.
+          </p>
+          <p>
+            Example:
+          </p>
+          <p>
+            &lt;head&gt;
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel=&quot;stylesheet&quot; href=&quot;main.css&quot;&gt;
+            <br> &lt;/head&gt;
+            <br>
+          </p>
+          Depending on the parent-child element relationship you want, you will use different selectors. An inherited selector will give the value to the direct child of the parent element and the in-direct child elements of the parent element. A non-inherited selector will only give the value to the direct child element of the parent element.
+        </div>
+      </div>
+      <div class="topic">
+        The Box Model
+        <div class="info">
+          <img src="box.png" alt="this is a screenshot" class="img">
+          <p>
+            *{
+            <br> box-sizing:
+            <br> border-box:
+            <br> }
+            <br>
+            <br> Includes border and padding but not the margin! And since box sizing in CSS is relatively new, browser specific prefixes must be applied:
+          </p>
+          <p>
+            *{
+            <br> -webkit-box-sizing: border-box;
+            <br> -moz-box-sizing: border-box;
+            <br> -ms-box-sizing: border-box;
+            <br> box-sizing: boarder-box;
+            <br> }
+          </p>
+          <p>
+            Percentage values change based on screensize while pixels do not.
+            <br> Also, setting a max-width will allow the box to get smaller than necessary but not larger than the max width.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
